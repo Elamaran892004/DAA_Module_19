@@ -1,46 +1,40 @@
 # EX 1D Linear search
-## DATE:
+## DATE: 
 ## AIM:
-To Write a python program to implement linear search on the given tuple
-
-
+To write a python program for a search function with parameter list name and the value to be searched using string values.
 
 ## Algorithm
-1. Loop through each element in the tuple.
-2. Compare the current element with the target value x.
-3. If the element matches x, print that the element was found and stop the search.
-4. If no match is found after checking all elements, print that the element was not found.
-5. End the function. 
-
+1. Read an integer l and then take l string inputs into a list List.
+2. Read the target string n to be searched.
+3. Initialize a variable found as False.
+4. Iterate through each element in List and compare with n. If a match is found, set found = True and break.
+5. Print "Found" if found is True; otherwise, print "Not Found".
 ## Program:
-```
+
 /*
 Program to implement a search function with parameter list name and the value to be searched using string values.
-Developed by: Danish Nicho N
-Register Number: 212222040030
+Developed by: Elamaran N
+Register Number:  21222040041
 */
-```
-```
-def search(tuple1,x):
-    for value in tuple1:
-        if(value==x):
-            print("Tuple: %d found"%x)
-            return 0
-    print("Tuple: %d not found"%x)
+
+
+def search(List,n):
     
-List=[]
-n=int(input())
-for i in range(n):
-    List.append(int(input()))
-tuple1=tuple(List)
-x=float(input())
-search(tuple1,x)
-```
+    found = False
+    for ele in List:
+        if ele == n :
+            found = True
+            break
+    if found :
+        print("Found")
+    else:
+        print("Not Found")
+
+l = int(input())
+List = [str(input()) for _ in range(l)]
+n = str(input())
 
 ## Output:
-![image](https://github.com/user-attachments/assets/229f998a-4722-4e31-85b0-2e17f03f013e)
-
-
-
+![WhatsApp Image 2025-04-26 at 10 46 51_cc1fd310](https://github.com/user-attachments/assets/9bb837f5-55b7-46e0-8af4-c34568ce8bf7)
 ## Result:
 The program was executed successfully, and it correctly checks if the input element is present in the list, printing "Found" if the element exists or "Not Found" if it does not.

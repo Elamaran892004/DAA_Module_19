@@ -14,8 +14,8 @@ To Write a Program for Implementing merge sort using python recursion
 ```
 /*
 Program to implement Merge Sort
-Developed by: Danish Nicho N
-Register Number: 212222040030 
+Developed by: Elamaran N
+Register Number: 212222040041 
 */
 ```
 
